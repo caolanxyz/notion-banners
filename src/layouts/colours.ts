@@ -6,7 +6,7 @@ export interface ColourTheme {
   accent_dark: string;
 }
 
-export const defaultTheme = "Dark";
+export const defaultTheme = "Gray";
 
 export const colourThemes: Record<string, ColourTheme> = {
   light: {

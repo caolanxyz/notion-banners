@@ -60,8 +60,8 @@ const getCSS: GetCSSFn = config => {
 
 const Component: LayoutComponent = ({ config }) => {
   const theme = getTheme(config);
-  const title = config.title;
   const subtitle = config.subtitle;
+  const title = config.title;
   const iconURL = `https://devicons.railway.app/${title}?variant=${
     theme === "light" ? "dark" : "light"
   }`;
@@ -79,12 +79,8 @@ const Component: LayoutComponent = ({ config }) => {
             <img className="dicon" src={iconURL} />
           </div>
         )}
-
-        <h1>
-          {title}
-        </h1>
-
-        {subtitle && <div className="subtitle">{subtitle}</div>}
+        <div className="subtitle">{subtitle}</div>
+        <h1>{title}</h1>
       </div>
     </div>
   );
