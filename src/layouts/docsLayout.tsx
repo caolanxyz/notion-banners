@@ -47,7 +47,7 @@ const Component: LayoutComponent = ({ config }) => {
       <Markdown
         style={{
           fontSize: 160,
-          color: colours.pink,
+          color: colours.accent_light,
           fontWeight: 800,
           marginTop: 20,
         }}
