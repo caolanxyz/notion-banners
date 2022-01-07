@@ -15,7 +15,7 @@ const description = "Service that generates dynamic gallery cover images for Not
 
 // Generate OG image for itself
 const image =
-  "https://og.caolan.xyz/api/image?fileType=png&layoutName=Page&Theme=Dark&Title=Open+Graph%5CnImage+Generator&Subtitle=%60og.caolan.xyz%60";
+  "https://og.caolan.xyz/api/image?fileType=png&layoutName=Page&Theme=Dark&Title=Notion+Gallery%5CnCover+Generator&Subtitle=%60og.caolan.xyz%60";
 
 const config: DefaultSeoProps = {
   title,
@@ -27,7 +27,7 @@ const config: DefaultSeoProps = {
     images: [{ url: image }],
   },
   twitter: {
-    handle: "@estdotland",
+    handle: "@caolanxyz",
     cardType: "summary_large_image",
   },
 };
