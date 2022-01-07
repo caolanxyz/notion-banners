@@ -48,7 +48,7 @@ const getCSS: GetCSSFn = config => {
       color: ${colours.accent_light};
     }
 
-    .url {
+    .subtitle {
       margin-top: 48px;
       text-align: right;
       font-size: 48px;
@@ -60,9 +60,9 @@ const getCSS: GetCSSFn = config => {
 
 const Component: LayoutComponent = ({ config }) => {
   const theme = getTheme(config);
-  const name = config.Name;
-  const url = config.URL;
-  const iconURL = `https://devicons.railway.app/${name}?variant=${
+  const title = config.title;
+  const subtitle = config.subtitle;
+  const iconURL = `https://devicons.railway.app/${title}?variant=${
     theme === "light" ? "dark" : "light"
   }`;
   const hideIcon = config.Icon === "Hide";
@@ -81,10 +81,10 @@ const Component: LayoutComponent = ({ config }) => {
         )}
 
         <h1>
-          Check out <span className="em">{name}</span> on Nest
+          {title}
         </h1>
 
-        {url && <div className="url">{url}</div>}
+        {subtitle && <div className="subtitle">{subtitle}</div>}
       </div>
     </div>
   );
@@ -96,20 +96,20 @@ export const featuredLayout: ILayout = {
     {
       name: "Theme",
       type: "select",
-      options: ["Light", "Dark"],
+      options: ["Light", "Dark", "Gray", "Brown", "Orange", "Yellow", "Green", "Blue", "Purple", "Pink", "Red"],
       default: defaultTheme,
     },
     {
-      name: "Name",
+      name: "title",
       type: "text",
       default: "Prisma",
       placeholder: "Module name",
     },
     {
-      name: "URL",
+      name: "subtitle",
       type: "text",
       default: "nest.land/-/prisma",
-      placeholder: "Module URL",
+      placeholder: "Subtitle Text",
     },
     {
       name: "Icon",

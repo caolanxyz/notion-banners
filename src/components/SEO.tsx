@@ -9,9 +9,9 @@ export interface Props extends NextSeoProps {
   image?: string;
 }
 
-const title = "Nest OG Image Generator";
+const title = "Notion Cover Image Generator";
 export const url = "";
-const description = "Service that generates dynamic OG images for nest.land";
+const description = "Service that generates dynamic gallery cover images for Notion";
 
 // Generate OG image for itself
 const image =

@@ -55,5 +55,6 @@ export interface Colours {
   fg: string;
   bg: string;
   gray: string;
-  pink: string;
+  accent_light: string;
+  accent_dark: string;
 }
