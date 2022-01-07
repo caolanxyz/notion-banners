@@ -1,5 +1,7 @@
 # Nest OG Image Generator
 
+<a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fcaolanxyz%2Fnotion-banners"><img src="https://vercel.com/button" alt="Deploy with Vercel"/></a>
+
 Service that dynamically generates [Open Graph](https://ogp.me/) images for [Nest](https://nest.land) that looks something like
 
 <img width="600" src="https://og.nest.land/api/image?layoutName=Pattern&Text=Hello+World" />
