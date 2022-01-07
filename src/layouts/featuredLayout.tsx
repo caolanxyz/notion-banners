@@ -45,7 +45,7 @@ const getCSS: GetCSSFn = config => {
     }
 
     .em {
-      color: ${colours.pink};
+      color: ${colours.accent_light};
     }
 
     .url {
