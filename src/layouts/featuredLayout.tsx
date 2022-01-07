@@ -27,7 +27,7 @@ const getCSS: GetCSSFn = config => {
     h1 {
       margin: 0;
       text-align: right;
-      font-size: 1.5em;
+      font-size: 2em;
       font-weight: 800;
       max-width: 1500px;
     }
@@ -51,9 +51,9 @@ const getCSS: GetCSSFn = config => {
     .subtitle {
       margin-top: 48px;
       text-align: right;
-      font-size: 48px;
+      font-size: 80px;
       font-family: "JetBrains Mono", monospace;
-      color: ${colours.gray};
+      color: ${colours.accent_dark};
     }
     `;
 };
@@ -102,20 +102,20 @@ export const featuredLayout: ILayout = {
     {
       name: "title",
       type: "text",
-      default: "Prisma",
-      placeholder: "Module name",
+      default: "This is a Title",
+      placeholder: "Title Text",
     },
     {
       name: "subtitle",
       type: "text",
-      default: "nest.land/-/prisma",
+      default: "This is a Subtitle",
       placeholder: "Subtitle Text",
     },
     {
       name: "Icon",
       type: "select",
       options: ["Show", "Hide"],
-      default: "Show",
+      default: "Hide",
     },
   ],
   getCSS,

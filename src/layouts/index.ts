@@ -10,8 +10,8 @@ import { blogLayout } from "./blogLayout";
  * All layouts that are available in the UI
  */
 export const layouts: ILayout[] = [
-  simpleLayout,
   featuredLayout,
+  simpleLayout,
   pageLayout,
   blogLayout,
   docsLayout,

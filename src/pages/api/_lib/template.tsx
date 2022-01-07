@@ -13,8 +13,8 @@ const getCommonCSS = () => {
       font-named-instance: "Regular";
       font-style: normal;
       font-weight: 100 900;
-      src: url("https://og.nest.land/fonts/sans/Inter-roman.latin.var.woff2") format("woff2 supports variations"),
-        url("https://og.nest.land/fonts/sans/Inter-roman.latin.var.woff2") format("woff2-variations");
+      src: url("https://og.caolan.xyz/fonts/sans/Inter-roman.latin.var.woff2") format("woff2 supports variations"),
+        url("https://og.caolan.xyz/fonts/sans/Inter-roman.latin.var.woff2") format("woff2-variations");
       unicode-range: U+0000-007F, U+00A0-0100, U+0131, U+0152-0154, U+02BB-02BD, U+02C6, U+02DA, U+02DC, U+2000-200C, U+2010-2028, U+202F-2060,
         U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+FEFF;
     }
@@ -25,8 +25,8 @@ const getCommonCSS = () => {
       font-named-instance: "Italic";
       font-style: italic;
       font-weight: 100 900;
-      src: url("https://og.nest.land/fonts/sans/Inter-italic.latin.var.woff2") format("woff2 supports variations"),
-        url("https://og.nest.land/fonts/sans/Inter-italic.latin.var.woff2") format("woff2-variations");
+      src: url("https://og.caolan.xyz/fonts/sans/Inter-italic.latin.var.woff2") format("woff2 supports variations"),
+        url("https://og.caolan.xyz/fonts/sans/Inter-italic.latin.var.woff2") format("woff2-variations");
       unicode-range: U+0000-007F, U+00A0-0100, U+0131, U+0152-0154, U+02BB-02BD, U+02C6, U+02DA, U+02DC, U+2000-200C, U+2010-2028, U+202F-2060,
         U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+FEFF;
     }
@@ -36,7 +36,7 @@ const getCommonCSS = () => {
       font-family: "Lora";
       font-style: normal;
       font-weight: 400 700;
-      src: url("https://og.nest.land/fonts/serif/Lora-VF.woff2") format("woff2 supports variations"), url("/fonts/serif/Lora-VF.woff2") format("woff2-variations");
+      src: url("https://og.caolan.xyz/fonts/serif/Lora-VF.woff2") format("woff2 supports variations"), url("/fonts/serif/Lora-VF.woff2") format("woff2-variations");
     }
   
     @font-face {
@@ -44,8 +44,8 @@ const getCommonCSS = () => {
       font-family: "Lora";
       font-style: italic;
       font-weight: 400 700;
-      src: url("https://og.nest.land/fonts/serif/Lora-Italic-VF.woff2") format("woff2 supports variations"),
-        url("https://og.nest.land/fonts/serif/Lora-Italic-VF.woff2") format("woff2-variations");
+      src: url("https://og.caolan.xyz/fonts/serif/Lora-Italic-VF.woff2") format("woff2 supports variations"),
+        url("https://og.caolan.xyz/fonts/serif/Lora-Italic-VF.woff2") format("woff2-variations");
     }
   }
   
@@ -54,7 +54,7 @@ const getCommonCSS = () => {
     font-family: "JetBrains Mono";
     font-style: normal;
     font-weight: normal;
-    src: url("https://og.nest.land/fonts/mono/JetBrainsMono-Regular.woff2") format("woff2");
+    src: url("https://og.caolan.xyz/fonts/mono/JetBrainsMono-Regular.woff2") format("woff2");
   }
 
     body {
