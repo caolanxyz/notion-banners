@@ -27,9 +27,9 @@ const getCSS: GetCSSFn = config => {
     h1 {
       margin: 0;
       text-align: right;
-      font-size: 2em;
+      font-size: 1.8em;
       font-weight: 800;
-      max-width: 1500px;
+      max-width: 1700px;
     }
 
     .dicon-wrapper {
@@ -49,7 +49,7 @@ const getCSS: GetCSSFn = config => {
     }
 
     .subtitle {
-      margin-top: 48px;
+      margin-bottom: 48px;
       text-align: right;
       font-size: 80px;
       font-family: "JetBrains Mono", monospace;
