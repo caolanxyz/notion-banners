@@ -4,6 +4,7 @@ import { patternLayout } from "./patternLayout";
 import { pageLayout } from "./pageLayout";
 import { simpleLayout } from "./simpleLayout";
 import { featuredLayout } from "./featuredLayout";
+import { project } from "./project";
 import { blogLayout } from "./blogLayout";
 
 /**
@@ -11,6 +12,7 @@ import { blogLayout } from "./blogLayout";
  */
 export const layouts: ILayout[] = [
   featuredLayout,
+  project,
   simpleLayout,
   pageLayout,
   blogLayout,
