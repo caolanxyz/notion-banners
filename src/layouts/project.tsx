@@ -49,7 +49,7 @@ const getCSS: GetCSSFn = config => {
     }
 
     .subtitle {
-      margin-bottom: 48px;
+      margin-top: 48px;
       text-align: right;
       font-size: 80px;
       font-family: "JetBrains Mono", monospace;
