@@ -20,8 +20,8 @@ const Home: NextPage = () => {
   return (
     <main tw="px-6 pb-20 max-w-6xl w-full mx-auto">
       <header tw="text-center mt-12 mb-12 space-y-6">
-        <h1 tw="text-5xl font-bold">Nest OG Image Generator</h1>
-        <h2 tw="text-xl text-gray-400">Dynamic open graph images for Nest</h2>
+        <h1 tw="text-5xl font-bold">Notion Gallery Image Generator</h1>
+        <h2 tw="text-xl text-gray-400">Dynamic gallery cover images for Notion</h2>
       </header>
 
       {isMounted && (
@@ -35,10 +35,8 @@ const Home: NextPage = () => {
         <div>
           <H2>What is This?</H2>
           <P>
-            This service dynamically generates{" "}
-            <StyledLink href="https://ogp.me/">Open Graph</StyledLink> images to
-            be used in HTML meta tags. OG images are the images you see when you
-            share a link on Twitter or Discord.
+            This service dynamically generates cover images to
+            be used in Notion Gallery Databases.
           </P>
 
           <P>
@@ -47,10 +45,10 @@ const Home: NextPage = () => {
 
           <P>
             The design and implementation of this site is heavily inspired by{" "}
-            <StyledLink href="https://github.com/vercel/og-image">
-              Vercel's example
+            <StyledLink href="https://og.nest.land/">
+              Nest's fork
             </StyledLink>{" "}
-            and{" "}
+            of{" "}
             <StyledLink href="https://og.railway.app/">
               Railway's OG image Generator
             </StyledLink>
