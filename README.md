@@ -2,22 +2,9 @@
 
 <a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fcaolanxyz%2Fnotion-banners"><img src="https://vercel.com/button" alt="Deploy with Vercel"/></a>
 
-Service that dynamically generates [Open Graph](https://ogp.me/) images for [Nest](https://nest.land) that looks something like
+Service that dynamically generates cover images for gallery view databases in [Notion](https://notion.so/product). These look something like
 
-<img width="600" src="https://og.nest.land/api/image?layoutName=Pattern&Text=Hello+World" />
-
-# ✨ How To Use
-
-Use the generated image URL in the `<head>` of your HTML document as the og:image meta property
-
-```html
-<meta
-  property="og:image"
-  content="https://og.nest.land/api/image?layoutName=Pattern&Text=Hello+World"
-/>
-```
-
-Whenever this image is requested (e.g. in link previews) the image will be generated on demand.
+<img width="600" src="https://covers.api.caolan.xyz/api/image?fileType=png&layoutName=Project&Theme=Purple&title=Hello+World%21&subtitle=Here%27s+an+example%21&Icon=Hide" />
 
 # 🧐 How It Works
 
@@ -42,6 +29,11 @@ This service can generate images using multiple _layouts_. A layout is defined a
 
 To start hacking, do the following:
 
+**One-click Deploy**
+Use the button below to fork this repo and deploy to Vercel straight away!
+<a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fcaolanxyz%2Fnotion-banners"><img src="https://vercel.com/button" alt="Deploy with Vercel"/></a>
+
+**Advanced Users**
 1. [Fork](https://github.com/nestdotland/og/fork) this repo and clone it
 2. Run `yarn` or `npm install` to install all dependencies
 3. Run locally with `yarn dev` and visit [`localhost:3000`](http://localhost:3000)
@@ -63,7 +55,7 @@ yarn start
 
 # 🙌 Acknowledgement
 
-Credit where credit is due. This started as a forked repo from [Railway's OG image generator](https://og.railway.app/)
+Credit where credit is due. This started as a forked repo from [Nest's OpenGraph image generator](https://github.com/nestdotland/og)
 
 # License
 
