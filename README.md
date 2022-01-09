@@ -1,6 +1,6 @@
 # Notion Cover Image Image Generator
 
-<a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fcaolanxyz%2Fnotion-banners"><img src="https://vercel.com/button" alt="Deploy with Vercel"/></a>
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fcaolanxyz%2Fnotion-banners%2Ftree%2Fmain&env=NEXT_PUBLIC_LOGO&envDescription=512px%20Logo%20Image%20for%20cards%20(Upload%20to%20somewhere%20like%20'ibb.co'%20if%20you%20don't%20have%20a%20URL)&project-name=notion-covers&repo-name=notion-covers&demo-title=Notion%20Cover%20Generator&demo-description=Dynamically%20generated%20cover%20images%20for%20Notion%20Galleries&demo-url=https%3A%2F%2Fcovers.api.caolan.xyz&demo-image=https%3A%2F%2Fcovers.api.caolan.xyz%2Fapi%2Fimage%3FfileType%3Dpng%26layoutName%3DProject%26Theme%3DPurple%26title%3DHello%2BWorld%2521%26subtitle%3DHere%2527s%2Ban%2Bexample%2521%26Icon%3DHide)
 
 Service that dynamically generates cover images for gallery view databases in [Notion](https://notion.so/product). These look something like
 
@@ -33,7 +33,7 @@ To start hacking, do the following:
 
 Use the button below to fork this repo and deploy to Vercel straight away!
 
-<a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fcaolanxyz%2Fnotion-banners"><img src="https://vercel.com/button" alt="Deploy with Vercel"/></a>
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fcaolanxyz%2Fnotion-banners%2Ftree%2Fmain&env=NEXT_PUBLIC_LOGO&envDescription=512px%20Logo%20Image%20for%20cards%20(Upload%20to%20somewhere%20like%20'ibb.co'%20if%20you%20don't%20have%20a%20URL)&project-name=notion-covers&repo-name=notion-covers&demo-title=Notion%20Cover%20Generator&demo-description=Dynamically%20generated%20cover%20images%20for%20Notion%20Galleries&demo-url=https%3A%2F%2Fcovers.api.caolan.xyz&demo-image=https%3A%2F%2Fcovers.api.caolan.xyz%2Fapi%2Fimage%3FfileType%3Dpng%26layoutName%3DProject%26Theme%3DPurple%26title%3DHello%2BWorld%2521%26subtitle%3DHere%2527s%2Ban%2Bexample%2521%26Icon%3DHide)
 
 **Advanced Users**
 
