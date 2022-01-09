@@ -56,7 +56,7 @@ export const Logo: React.FC<{
   style?: React.CSSProperties;
 }> = ({ config, style }) => {
   // const theme = gString(config, "Theme", defaultTheme).toLowerCase();
-  const logo = "https://og.caolan.xyz/logo/512px.png";
+  // const logo = "https://og.caolan.xyz/logo/512px.png";
 
   return (
     <img
