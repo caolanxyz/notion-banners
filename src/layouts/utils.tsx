@@ -60,7 +60,7 @@ export const Logo: React.FC<{
 
   return (
     <img
-      src={logo}
+      src={process.env.NEXT_PUBLIC_LOGO}
       className="logo"
       style={{ width: 128, height: 128, ...style }}
     />
