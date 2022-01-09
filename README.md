@@ -30,11 +30,13 @@ This service can generate images using multiple _layouts_. A layout is defined a
 To start hacking, do the following:
 
 **One-click Deploy**
+
 Use the button below to fork this repo and deploy to Vercel straight away!
 
 <a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fcaolanxyz%2Fnotion-banners"><img src="https://vercel.com/button" alt="Deploy with Vercel"/></a>
 
 **Advanced Users**
+
 1. [Fork](https://github.com/nestdotland/og/fork) this repo and clone it
 2. Run `yarn` or `npm install` to install all dependencies
 3. Run locally with `yarn dev` and visit [`localhost:3000`](http://localhost:3000)
