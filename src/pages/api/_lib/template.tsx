@@ -63,7 +63,7 @@ const getCommonCSS = () => {
       display: flex;
       text-align: center;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       font-family: 'Inter', sans-serif;
       font-weight: 400;
       font-size: 100px;

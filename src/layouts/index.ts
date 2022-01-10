@@ -3,16 +3,18 @@ import { docsLayout } from "./docsLayout";
 import { patternLayout } from "./patternLayout";
 import { pageLayout } from "./pageLayout";
 import { simpleLayout } from "./simpleLayout";
-import { featuredLayout } from "./featuredLayout";
-import { project } from "./project";
+import { generalLayout } from "./generalLayout";
+import { projectLayout } from "./projectLayout";
+import { featuredImage } from "./featuredImage";
 import { blogLayout } from "./blogLayout";
 
 /**
  * All layouts that are available in the UI
  */
 export const layouts: ILayout[] = [
-  featuredLayout,
-  project,
+  generalLayout,
+  projectLayout,
+  featuredImage,
   simpleLayout,
   pageLayout,
   blogLayout,
