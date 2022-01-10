@@ -53,7 +53,7 @@ const Component: LayoutComponent = ({ config }) => {
 };
 
 export const blogLayout: ILayout = {
-  name: "Blog",
+  name: "Blog (WIP)",
   properties: [
     {
       name: "Theme",

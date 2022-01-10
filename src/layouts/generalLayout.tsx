@@ -87,7 +87,7 @@ const Component: LayoutComponent = ({ config }) => {
 };
 
 export const generalLayout: ILayout = {
-  name: "Featured",
+  name: "General",
   properties: [
     {
       name: "Theme",

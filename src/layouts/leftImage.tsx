@@ -8,10 +8,10 @@ const getCSS: GetCSSFn = config => {
 
   return `
   .top {
-    width: 100vw;
-    height: 30vh;
+    width: 65vw;
+    height: 100vh;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: flex-end;
     background-color: ${colours.bg};
     color: ${colours.fg};
@@ -25,13 +25,13 @@ const getCSS: GetCSSFn = config => {
   }
 
   .featurecontainer {
-    width: 100vw;
-    height: 70vh;
+    width: 35vw;
+    height: 100vh;
   }
 
   .contentcontainer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
 
@@ -42,9 +42,9 @@ const getCSS: GetCSSFn = config => {
     }
 
     h1 {
-      margin-top: -10;
+      margin: 0;
       text-align: right;
-      font-size: 1.6em;
+      font-size: 1.8em;
       font-weight: 800;
       max-width: 1700px;
     }
@@ -83,23 +83,24 @@ const Component: LayoutComponent = ({ config }) => {
 
   return (
     <div className="contentcontainer">
-      <div className="featurecontainer">
-        <img src={featureURL} className="featurepic"/>
-      </div>
       <div className="top">
         <Logo config={config} />
 
         <div className="content">
+          <div className="subtitle">{subtitle}</div>
           <h1>{title}</h1>
         </div>
+      </div>
+      <div className="featurecontainer">
+        <img src={featureURL} className="featurepic"/>
       </div>
     </div>
 
   );
 };
 
-export const bigImage: ILayout = {
-  name: "Big Image",
+export const leftImage: ILayout = {
+  name: "Image Left",
   properties: [
     {
       name: "Theme",
@@ -112,6 +113,12 @@ export const bigImage: ILayout = {
       type: "text",
       default: "",
       placeholder: "Title Text",
+    },
+    {
+      name: "subtitle",
+      type: "text",
+      default: "",
+      placeholder: "Subtitle Text",
     },
     {
       name: "image",

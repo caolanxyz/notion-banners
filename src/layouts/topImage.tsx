@@ -8,10 +8,10 @@ const getCSS: GetCSSFn = config => {
 
   return `
   .top {
-    width: 65vw;
-    height: 100vh;
+    width: 100vw;
+    height: 30vh;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: flex-end;
     background-color: ${colours.bg};
     color: ${colours.fg};
@@ -25,13 +25,13 @@ const getCSS: GetCSSFn = config => {
   }
 
   .featurecontainer {
-    width: 35vw;
-    height: 100vh;
+    width: 100vw;
+    height: 70vh;
   }
 
   .contentcontainer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
   }
 
@@ -42,9 +42,9 @@ const getCSS: GetCSSFn = config => {
     }
 
     h1 {
-      margin: 0;
+      margin-top: -10;
       text-align: right;
-      font-size: 1.8em;
+      font-size: 1.6em;
       font-weight: 800;
       max-width: 1700px;
     }
@@ -83,24 +83,23 @@ const Component: LayoutComponent = ({ config }) => {
 
   return (
     <div className="contentcontainer">
+      <div className="featurecontainer">
+        <img src={featureURL} className="featurepic"/>
+      </div>
       <div className="top">
         <Logo config={config} />
 
         <div className="content">
-          <div className="subtitle">{subtitle}</div>
           <h1>{title}</h1>
         </div>
-      </div>
-      <div className="featurecontainer">
-        <img src={featureURL} className="featurepic"/>
       </div>
     </div>
 
   );
 };
 
-export const featuredImage: ILayout = {
-  name: "Featured Image",
+export const topImage: ILayout = {
+  name: "Image Top",
   properties: [
     {
       name: "Theme",
@@ -113,12 +112,6 @@ export const featuredImage: ILayout = {
       type: "text",
       default: "",
       placeholder: "Title Text",
-    },
-    {
-      name: "subtitle",
-      type: "text",
-      default: "",
-      placeholder: "Subtitle Text",
     },
     {
       name: "image",

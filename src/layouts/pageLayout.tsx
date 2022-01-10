@@ -47,7 +47,7 @@ const Component: LayoutComponent = ({ config }) => {
 };
 
 export const pageLayout: ILayout = {
-  name: "Page",
+  name: "Page (WIP)",
   properties: [
     {
       name: "Theme",
