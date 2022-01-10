@@ -42,9 +42,9 @@ const getCSS: GetCSSFn = config => {
     }
 
     h1 {
-      margin: 0;
+      margin-top: -10;
       text-align: right;
-      font-size: 1.8em;
+      font-size: 1.6em;
       font-weight: 800;
       max-width: 1700px;
     }
@@ -112,12 +112,6 @@ export const bigImage: ILayout = {
       type: "text",
       default: "",
       placeholder: "Title Text",
-    },
-    {
-      name: "subtitle",
-      type: "text",
-      default: "",
-      placeholder: "Subtitle Text",
     },
     {
       name: "image",

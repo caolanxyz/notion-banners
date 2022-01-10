@@ -6,22 +6,22 @@ export interface ColourTheme {
   accent_dark: string;
 }
 
-export const defaultTheme = "Gray";
+export const defaultTheme = "brown";
 
 export const colourThemes: Record<string, ColourTheme> = {
   light: {
     fg: "#111827",
     bg: "#ffffff",
     gray: "#9CA3AF",
-    accent_light: "#8c929d",
-    accent_dark: "#2e3034",
+    accent_light: "#2e3034",
+    accent_dark: "#8c929d",
   },
   dark: {
     fg: "#F3F4F6",
     bg: "#111827",
     gray: "#6B7280",
-    accent_light: "#606673",
-    accent_dark: "#151619",
+    accent_light: "#151619",
+    accent_dark: "#606673",
   },
   gray: {
     fg: "#FFFFFF",
