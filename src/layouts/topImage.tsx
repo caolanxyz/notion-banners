@@ -9,13 +9,30 @@ const getCSS: GetCSSFn = config => {
   return `
   .top {
     width: 100vw;
-    height: 100vh;
+    height: 30vh;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: flex-end;
     background-color: ${colours.bg};
     color: ${colours.fg};
     padding: 80px;
+  }
+
+  .featurepic {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .featurecontainer {
+    width: 100vw;
+    height: 70vh;
+  }
+
+  .contentcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
     .logo {
@@ -25,9 +42,9 @@ const getCSS: GetCSSFn = config => {
     }
 
     h1 {
-      margin: 0;
+      margin-top: -10;
       text-align: right;
-      font-size: 1.8em;
+      font-size: 1.6em;
       font-weight: 800;
       max-width: 1700px;
     }
@@ -49,7 +66,7 @@ const getCSS: GetCSSFn = config => {
     }
 
     .subtitle {
-      margin-bottom: 48px;
+      margin-top: 48px;
       text-align: right;
       font-size: 80px;
       font-family: "JetBrains Mono", monospace;
@@ -62,32 +79,27 @@ const Component: LayoutComponent = ({ config }) => {
   const theme = getTheme(config);
   const subtitle = config.subtitle;
   const title = config.title;
-  const iconURL = `https://devicons.railway.app/${title}?variant=${
-    theme === "light" ? "dark" : "light"
-  }`;
-  const hideIcon = config.Icon === "Hide";
-
-  console.log({ iconURL });
+  const featureURL = config.image;
 
   return (
-    <div className="top">
-      <Logo config={config} />
+    <div className="contentcontainer">
+      <div className="featurecontainer">
+        <img src={featureURL} className="featurepic"/>
+      </div>
+      <div className="top">
+        <Logo config={config} />
 
-      <div className="content">
-        {!hideIcon && (
-          <div className="dicon-wrapper">
-            <img className="dicon" src={iconURL} />
-          </div>
-        )}
-        <div className="subtitle">{subtitle}</div>
-        <h1>{title}</h1>
+        <div className="content">
+          <h1>{title}</h1>
+        </div>
       </div>
     </div>
+
   );
 };
 
-export const generalLayout: ILayout = {
-  name: "General",
+export const topImage: ILayout = {
+  name: "Image Top",
   properties: [
     {
       name: "Theme",
@@ -98,20 +110,14 @@ export const generalLayout: ILayout = {
     {
       name: "title",
       type: "text",
-      default: "This is a Title",
+      default: "",
       placeholder: "Title Text",
     },
     {
-      name: "subtitle",
+      name: "image",
       type: "text",
-      default: "This is a Subtitle",
-      placeholder: "Subtitle Text",
-    },
-    {
-      name: "Icon",
-      type: "select",
-      options: ["Show", "Hide"],
-      default: "Hide",
+      default: "https://cdn.cloudflare.steamstatic.com/steam/apps/1663040/ss_dddb99b7d2bae8f8a14deb74f58f0895919bdb68.1920x1080.jpg?t=1633022423",
+      placeholder: "URL Text",
     },
   ],
   getCSS,

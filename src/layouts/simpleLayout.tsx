@@ -16,7 +16,7 @@ const Component: LayoutComponent = ({ config }) => {
 };
 
 export const simpleLayout: ILayout = {
-  name: "Simple",
+  name: "Simple (WIP)",
   properties: [{ name: "Text", type: "text", default: "**Hello** _World_" }],
   getCSS,
   Component,

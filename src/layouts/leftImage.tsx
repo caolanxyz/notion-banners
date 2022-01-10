@@ -99,8 +99,8 @@ const Component: LayoutComponent = ({ config }) => {
   );
 };
 
-export const featuredImage: ILayout = {
-  name: "Featured Image",
+export const leftImage: ILayout = {
+  name: "Image Left",
   properties: [
     {
       name: "Theme",

@@ -73,7 +73,7 @@ const Component: LayoutComponent = ({ config }) => {
 };
 
 export const docsLayout: ILayout = {
-  name: "Docs",
+  name: "Docs (WIP)",
   properties: [
     {
       name: "Theme",

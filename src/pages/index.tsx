@@ -40,10 +40,6 @@ const Home: NextPage = () => {
           </P>
 
           <P>
-            <pre tw="pl-4 font-mono break-all overflow-hidden overflow-ellipsis">{`<meta property="og:image" content="{IMAGE_URL}" />`}</pre>
-          </P>
-
-          <P>
             The design and implementation of this site is heavily inspired by{" "}
             <StyledLink href="https://og.nest.land/">
               Nest's fork

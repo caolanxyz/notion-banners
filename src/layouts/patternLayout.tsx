@@ -59,7 +59,7 @@ const Component: LayoutComponent = ({ config }) => {
 };
 
 export const patternLayout: ILayout = {
-  name: "Pattern",
+  name: "Pattern (WIP)",
   properties: [
     {
       name: "Pattern",
