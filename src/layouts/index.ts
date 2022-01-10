@@ -6,6 +6,7 @@ import { simpleLayout } from "./simpleLayout";
 import { generalLayout } from "./generalLayout";
 import { projectLayout } from "./projectLayout";
 import { featuredImage } from "./featuredImage";
+import { bigImage } from "./bigImage";
 import { blogLayout } from "./blogLayout";
 
 /**
@@ -15,6 +16,7 @@ export const layouts: ILayout[] = [
   generalLayout,
   projectLayout,
   featuredImage,
+  bigImage,
   simpleLayout,
   pageLayout,
   blogLayout,
