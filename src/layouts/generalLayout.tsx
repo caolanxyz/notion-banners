@@ -86,7 +86,7 @@ const Component: LayoutComponent = ({ config }) => {
   );
 };
 
-export const featuredLayout: ILayout = {
+export const generalLayout: ILayout = {
   name: "Featured",
   properties: [
     {

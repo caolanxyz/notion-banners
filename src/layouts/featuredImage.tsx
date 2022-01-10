@@ -8,7 +8,7 @@ const getCSS: GetCSSFn = config => {
 
   return `
   .top {
-    width: 100vw;
+    width: 65vw;
     height: 100vh;
     display: flex;
     align-items: flex-end;
@@ -16,6 +16,23 @@ const getCSS: GetCSSFn = config => {
     background-color: ${colours.bg};
     color: ${colours.fg};
     padding: 80px;
+  }
+
+  .featurepic {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .featurecontainer {
+    width: 35vw;
+    height: 100vh;
+  }
+
+  .contentcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 
     .logo {
@@ -62,32 +79,28 @@ const Component: LayoutComponent = ({ config }) => {
   const theme = getTheme(config);
   const subtitle = config.subtitle;
   const title = config.title;
-  const iconURL = `https://devicons.railway.app/${title}?variant=${
-    theme === "light" ? "dark" : "light"
-  }`;
-  const hideIcon = config.Icon === "Hide";
-
-  console.log({ iconURL });
+  const featureURL = config.image;
 
   return (
-    <div className="top">
-      <Logo config={config} />
+    <div className="contentcontainer">
+      <div className="top">
+        <Logo config={config} />
 
-      <div className="content">
-        {!hideIcon && (
-          <div className="dicon-wrapper">
-            <img className="dicon" src={iconURL} />
-          </div>
-        )}
-        <h1>{title}</h1>
-        <div className="subtitle">{subtitle}</div>
+        <div className="content">
+          <div className="subtitle">{subtitle}</div>
+          <h1>{title}</h1>
+        </div>
+      </div>
+      <div className="featurecontainer">
+        <img src={featureURL} className="featurepic"/>
       </div>
     </div>
+
   );
 };
 
-export const project: ILayout = {
-  name: "Project",
+export const featuredImage: ILayout = {
+  name: "Featured Image",
   properties: [
     {
       name: "Theme",
@@ -98,20 +111,20 @@ export const project: ILayout = {
     {
       name: "title",
       type: "text",
-      default: "This is a Title",
+      default: "",
       placeholder: "Title Text",
     },
     {
       name: "subtitle",
       type: "text",
-      default: "This is a Subtitle",
+      default: "",
       placeholder: "Subtitle Text",
     },
     {
-      name: "Icon",
-      type: "select",
-      options: ["Show", "Hide"],
-      default: "Hide",
+      name: "image",
+      type: "text",
+      default: "https://cdn.cloudflare.steamstatic.com/steam/apps/1663040/ss_dddb99b7d2bae8f8a14deb74f58f0895919bdb68.1920x1080.jpg?t=1633022423",
+      placeholder: "URL Text",
     },
   ],
   getCSS,
