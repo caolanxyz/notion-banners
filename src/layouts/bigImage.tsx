@@ -9,9 +9,9 @@ const getCSS: GetCSSFn = config => {
   return `
   .top {
     width: 100vw;
-    height: 25vh;
+    height: 30vh;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: flex-end;
     background-color: ${colours.bg};
     color: ${colours.fg};
@@ -26,7 +26,7 @@ const getCSS: GetCSSFn = config => {
 
   .featurecontainer {
     width: 100vw;
-    height: 75vh;
+    height: 70vh;
   }
 
   .contentcontainer {
@@ -90,7 +90,6 @@ const Component: LayoutComponent = ({ config }) => {
         <Logo config={config} />
 
         <div className="content">
-          <div className="subtitle">{subtitle}</div>
           <h1>{title}</h1>
         </div>
       </div>
