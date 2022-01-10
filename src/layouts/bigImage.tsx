@@ -31,7 +31,7 @@ const getCSS: GetCSSFn = config => {
 
   .contentcontainer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
   }
 
