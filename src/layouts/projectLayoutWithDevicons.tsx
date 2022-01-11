@@ -92,8 +92,8 @@ const Component: LayoutComponent = ({ config }) => {
   );
 };
 
-export const projectLayout: ILayout = {
-  name: "Project",
+export const projectLayoutWithDevicons: ILayout = {
+  name: "ProjectWithIcons",
   properties: [
     {
       name: "Theme",

@@ -93,8 +93,8 @@ const Component: LayoutComponent = ({ config }) => {
   );
 };
 
-export const generalLayout: ILayout = {
-  name: "General",
+export const generalLayoutWithDevicons: ILayout = {
+  name: "GeneralWithIcons",
   properties: [
     {
       name: "Theme",
