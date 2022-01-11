@@ -10,6 +10,7 @@ const getCSS: GetCSSFn = config => {
     body {
       color: ${colours.fg};
       background: ${colours.bg};
+      justify-content: center;
     }
 
     h1 {

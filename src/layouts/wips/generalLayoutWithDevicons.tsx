@@ -1,3 +1,10 @@
+/*
+
+ICON SYSTEM CURRENTLY WIP
+
+*/
+
+
 import { GetCSSFn, ILayout, LayoutComponent } from "../types";
 import { colourThemes, defaultTheme } from "./colours";
 import { getTheme, Logo } from "./utils";
@@ -49,7 +56,7 @@ const getCSS: GetCSSFn = config => {
     }
 
     .subtitle {
-      margin-top: 48px;
+      margin-bottom: 48px;
       text-align: right;
       font-size: 80px;
       font-family: "JetBrains Mono", monospace;
@@ -62,21 +69,32 @@ const Component: LayoutComponent = ({ config }) => {
   const theme = getTheme(config);
   const subtitle = config.subtitle;
   const title = config.title;
+  const iconURL = `https://devicons.railway.app/${title}?variant=${
+    theme === "light" ? "dark" : "light"
+  }`;
+  const hideIcon = config.Icon === "Hide";
+
+  console.log({ iconURL });
 
   return (
     <div className="top">
       <Logo config={config} />
 
       <div className="content">
-        <h1>{title}</h1>
+        {!hideIcon && (
+          <div className="dicon-wrapper">
+            <img className="dicon" src={iconURL} />
+          </div>
+        )}
         <div className="subtitle">{subtitle}</div>
+        <h1>{title}</h1>
       </div>
     </div>
   );
 };
 
-export const projectLayout: ILayout = {
-  name: "Project",
+export const generalLayout: ILayout = {
+  name: "General",
   properties: [
     {
       name: "Theme",
@@ -95,6 +113,12 @@ export const projectLayout: ILayout = {
       type: "text",
       default: "This is a Subtitle",
       placeholder: "Subtitle Text",
+    },
+    {
+      name: "Icon",
+      type: "select",
+      options: ["Show", "Hide"],
+      default: "Hide",
     },
   ],
   getCSS,

@@ -1,3 +1,9 @@
+/*
+
+ICON SYSTEM CURRENTLY WIP
+
+*/
+
 import { GetCSSFn, ILayout, LayoutComponent } from "../types";
 import { colourThemes, defaultTheme } from "./colours";
 import { getTheme, Logo } from "./utils";
@@ -62,12 +68,23 @@ const Component: LayoutComponent = ({ config }) => {
   const theme = getTheme(config);
   const subtitle = config.subtitle;
   const title = config.title;
+  const iconURL = `https://devicons.railway.app/${title}?variant=${
+    theme === "light" ? "dark" : "light"
+  }`;
+  const hideIcon = config.Icon === "Hide";
+
+  console.log({ iconURL });
 
   return (
     <div className="top">
       <Logo config={config} />
 
       <div className="content">
+        {!hideIcon && (
+          <div className="dicon-wrapper">
+            <img className="dicon" src={iconURL} />
+          </div>
+        )}
         <h1>{title}</h1>
         <div className="subtitle">{subtitle}</div>
       </div>
@@ -95,6 +112,12 @@ export const projectLayout: ILayout = {
       type: "text",
       default: "This is a Subtitle",
       placeholder: "Subtitle Text",
+    },
+    {
+      name: "Icon",
+      type: "select",
+      options: ["Show", "Hide"],
+      default: "Hide",
     },
   ],
   getCSS,

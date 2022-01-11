@@ -11,6 +11,7 @@ const getCSS: GetCSSFn = config => {
     body {
       color: ${colours.fg};
       background: ${colours.bg};
+      justify-content: center;
     }
 
     h1 {
@@ -64,7 +65,7 @@ export const blogLayout: ILayout = {
     {
       name: "Title",
       type: "text",
-      default: "Nest Module Registry",
+      default: "My Epic Blog Post",
       placeholder: "Title Text",
     },
     {
