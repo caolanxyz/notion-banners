@@ -20,7 +20,6 @@ export const layouts: ILayout[] = [
   simpleLayout,
   pageLayout,
   blogLayout,
-  docsLayout,
   patternLayout,
 ];
 

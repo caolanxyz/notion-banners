@@ -1,3 +1,9 @@
+/*
+
+WORK IN PROGRESS LAYOUT
+
+*/
+
 import { GetCSSFn, ILayout, LayoutComponent } from "../types";
 import { defaultTheme, colourThemes } from "./colours";
 import { gString, Markdown, Logo } from "./utils";
@@ -78,7 +84,7 @@ export const docsLayout: ILayout = {
     {
       name: "Theme",
       type: "select",
-      options: ["Light", "Dark"],
+      options: ["Light", "Dark", "Gray", "Brown", "Orange", "Yellow", "Green", "Blue", "Purple", "Pink", "Red"],
       default: defaultTheme,
     },
     {

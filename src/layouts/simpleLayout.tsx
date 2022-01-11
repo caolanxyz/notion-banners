@@ -7,6 +7,7 @@ const getCSS: GetCSSFn = config => {
       font-size: 200px;
       color: white;
       background: linear-gradient(180deg, #FF6188 0%, #FC9867 100%);
+      justify-content: center;
     }
   `;
 };
