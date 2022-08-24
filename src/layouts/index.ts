@@ -8,6 +8,7 @@ import { projectLayout } from "./projectLayout";
 import { leftImage } from "./leftImage";
 import { topImage } from "./topImage";
 import { blogLayout } from "./blogLayout";
+import { modelViewer } from "./modelViewer";
 
 /**
  * All layouts that are available in the UI
@@ -21,6 +22,7 @@ export const layouts: ILayout[] = [
   pageLayout,
   blogLayout,
   patternLayout,
+  modelViewer,
 ];
 
 export const getDefaultLayout = (layout: ILayout): ILayoutConfig => {
