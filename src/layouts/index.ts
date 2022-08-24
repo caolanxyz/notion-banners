@@ -1,5 +1,4 @@
 import { ILayout, ILayoutConfig } from "../types";
-import { docsLayout } from "./docsLayout";
 import { patternLayout } from "./patternLayout";
 import { pageLayout } from "./pageLayout";
 import { simpleLayout } from "./simpleLayout";
