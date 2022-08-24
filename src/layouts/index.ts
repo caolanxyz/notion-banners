@@ -1,6 +1,4 @@
 import { ILayout, ILayoutConfig } from "../types";
-import { patternLayout } from "./patternLayout";
-import { pageLayout } from "./pageLayout";
 import { simpleLayout } from "./simpleLayout";
 import { generalLayout } from "./generalLayout";
 import { projectLayout } from "./projectLayout";
@@ -18,9 +16,7 @@ export const layouts: ILayout[] = [
   leftImage,
   topImage,
   simpleLayout,
-  pageLayout,
   blogLayout,
-  patternLayout,
   modelViewer,
 ];
 
