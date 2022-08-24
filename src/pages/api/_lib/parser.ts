@@ -4,7 +4,7 @@ import { getLayoutConfigFromQuery } from "../../../layouts";
 import { IConfig, ILayoutConfig, FileType } from "../../../types";
 
 export const parseRequest = (req: NextApiRequest): IConfig & ILayoutConfig => {
-  // const arr = (pathname || "/").slice(1).split(".");
+  //  const arr = (pathname || "/").slice(1).split(".");
   // let extension = "";
   // let text = "";
   // if (arr.length === 0) {
