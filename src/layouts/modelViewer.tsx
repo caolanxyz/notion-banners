@@ -1,6 +1,11 @@
 import { GetCSSFn, ILayout, LayoutComponent } from "../types";
 import { colourThemes, defaultTheme } from "./colours";
 import { getTheme, Logo } from "./utils";
+import * as THREE from 'three'
+import React, { Suspense } from "react";
+import { Canvas } from 'react-three-fiber'
+import { OrbitControls, useGLTF } from "@react-three/drei";
+
 
 const getCSS: GetCSSFn = config => {
   const theme = getTheme(config);
@@ -9,13 +14,30 @@ const getCSS: GetCSSFn = config => {
   return `
   .top {
     width: 100vw;
-    height: 100vh;
+    height: 30vh;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: flex-end;
     background-color: ${colours.bg};
     color: ${colours.fg};
     padding: 80px;
+  }
+
+  .featurepic {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .featurecontainer {
+    width: 100vw;
+    height: 70vh;
+  }
+
+  .contentcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
     .logo {
@@ -25,9 +47,9 @@ const getCSS: GetCSSFn = config => {
     }
 
     h1 {
-      margin: 0;
+      margin-top: -10;
       text-align: right;
-      font-size: 1.8em;
+      font-size: 1.6em;
       font-weight: 800;
       max-width: 1700px;
     }
@@ -49,7 +71,7 @@ const getCSS: GetCSSFn = config => {
     }
 
     .subtitle {
-      margin-bottom: 48px;
+      margin-top: 48px;
       text-align: right;
       font-size: 80px;
       font-family: "JetBrains Mono", monospace;
@@ -62,11 +84,33 @@ const Component: LayoutComponent = ({ config }) => {
   const theme = getTheme(config);
   const subtitle = config.subtitle;
   const title = config.title;
+  const featureURL = config.image;
+
+  function Model(props) {
+    const { scene } = useGLTF("https://modelviewer.dev/shared-assets/models/Astronaut.glb");
+    return <primitive object={scene} />;
+  }
 
   return (
-    <div className="top">
-      <model-viewer src="https://modelviewer.dev/shared-assets/models/NeilArmstrong.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls shadow-intensity="1" autoplay> </model-viewer>
+    <div className="contentcontainer">
+      <div className="featurecontainer">
+      <Canvas camera={{ position: [0, 0, 2], fov: 50 }}>
+        <ambientLight intensity={1} />
+        <Suspense fallback={null}>
+          <Model />
+        </Suspense>
+        <OrbitControls />
+      </Canvas>
+      </div>
+      <div className="top">
+        <Logo config={config} />
+
+        <div className="content">
+          <h1>{title}</h1>
+        </div>
+      </div>
     </div>
+
   );
 };
 
@@ -82,14 +126,14 @@ export const modelViewer: ILayout = {
     {
       name: "title",
       type: "text",
-      default: "This is a Title",
+      default: "",
       placeholder: "Title Text",
     },
     {
-      name: "subtitle",
+      name: "image",
       type: "text",
-      default: "This is a Subtitle",
-      placeholder: "Subtitle Text",
+      default: "https://cdn.cloudflare.steamstatic.com/steam/apps/1663040/ss_dddb99b7d2bae8f8a14deb74f58f0895919bdb68.1920x1080.jpg?t=1633022423",
+      placeholder: "URL Text",
     },
   ],
   getCSS,

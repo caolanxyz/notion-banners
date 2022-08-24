@@ -11,6 +11,9 @@
   },
   "dependencies": {
     "@radix-ui/react-popover": "^0.0.19",
+    "@react-three/drei": "^9.23.5",
+    "@react-three/fiber": "^8.6.0",
+    "@types/three": "^0.143.1",
     "agentkeepalive": "^4.2.0",
     "chrome-aws-lambda": "^10.1.0",
     "copy-to-clipboard": "^3.3.1",
@@ -23,8 +26,10 @@
     "react-dom": "^17.0.2",
     "react-feather": "^2.0.9",
     "react-fittext": "^1.0.0",
+    "react-three-fiber": "^6.0.13",
     "styled-components": "^5.3.0",
     "theme-custom-properties": "^1.0.0",
+    "three": "^0.143.0",
     "twemoji": "13.0.2",
     "use-local-storage-state": "^10.0.0"
   },

@@ -118,6 +118,10 @@ export const getHtml = (config: IConfig & ILayoutConfig) => {
         ${getCommonCSS()}
         ${layout?.getCSS != null ? layout.getCSS(config) : ""}
     </style>
+    <script
+    type="module"
+    src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+  ></script>
     <body>
       ${rendered}
     </body>
