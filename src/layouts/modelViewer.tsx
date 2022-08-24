@@ -93,7 +93,6 @@ const Component: LayoutComponent = ({ config }) => {
 
   return (
     <div className="contentcontainer">
-      <div className="featurecontainer">
       <Canvas camera={{ position: [0, 0, 2], fov: 50 }}>
         <ambientLight intensity={1} />
         <Suspense fallback={null}>
@@ -101,14 +100,6 @@ const Component: LayoutComponent = ({ config }) => {
         </Suspense>
         <OrbitControls />
       </Canvas>
-      </div>
-      <div className="top">
-        <Logo config={config} />
-
-        <div className="content">
-          <h1>{title}</h1>
-        </div>
-      </div>
     </div>
 
   );
