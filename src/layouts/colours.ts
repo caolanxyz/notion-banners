@@ -30,6 +30,13 @@ export const colourThemes: Record<string, ColourTheme> = {
     accent_light: "#CCCCCC",
     accent_dark: "#4D4D4D",
   },
+  default: {
+    fg: "#FFFFFF",
+    bg: "#969696",
+    gray: "#121212",
+    accent_light: "#CCCCCC",
+    accent_dark: "#4D4D4D",
+  },
   brown: {
     fg: "#FFFFFF",
     bg: "#8F6551",

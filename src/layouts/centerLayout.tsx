@@ -81,7 +81,7 @@ export const centerLayout: ILayout = {
     {
       name: "Theme",
       type: "select",
-      options: ["Light", "Dark", "Gray", "Brown", "Orange", "Yellow", "Green", "Blue", "Purple", "Pink", "Red"],
+      options: ["Light", "Dark", "Gray", "Default", "Brown", "Orange", "Yellow", "Green", "Blue", "Purple", "Pink", "Red"],
       default: defaultTheme,
     },
     {
