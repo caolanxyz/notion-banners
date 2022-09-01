@@ -29,7 +29,7 @@ const getCSS: GetCSSFn = config => {
 
     h1 {
       margin: 0;
-      text-align: right;
+      text-align: left;
       font-size: 2.4em;
       font-weight: 800;
       max-width: 1700px;
