@@ -8,7 +8,7 @@ const getCSS: GetCSSFn = config => {
 
   return `
   .top {
-    width: 65vw;
+    width: 72vw;
     height: 100vh;
     display: flex;
     align-items: flex-end;
@@ -25,7 +25,7 @@ const getCSS: GetCSSFn = config => {
   }
 
   .featurecontainer {
-    width: 35vw;
+    width: 28vw;
     height: 100vh;
   }
 
@@ -44,9 +44,10 @@ const getCSS: GetCSSFn = config => {
     h1 {
       margin: 0;
       text-align: right;
-      font-size: 1.8em;
+      font-size: 1.6em;
       font-weight: 800;
       max-width: 1700px;
+      overflow-wrap: anywhere;
     }
 
     .dicon-wrapper {
